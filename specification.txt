@@ -1,0 +1,27 @@
+Html tags used:
+meta
+link
+script
+title
+body
+header
+nav
+ul
+li
+a
+h1
+h2
+div
+button
+img
+p
+style
+
+CSS properties used:
+margin
+font-family
+font-size
+color
+border
+
+I used Java Script and Bootstrap for making a button on the botom of the screen that takes you to the bottom and to the top of the web page. The javascript gives the button functionality, bootstrap gives the button the style.

@@ -1,0 +1,515 @@
+
+
+body {
+  background-color: #f5f5f5;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Un grupo a la izquierda, otro a la derecha */
+    align-items: center;
+    background-color: #F3EAF8;
+    padding: 0 0;
+}
+
+.navmenutitle{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    flex-direction: row;
+    justify-content:center;
+    list-style-type: none;
+
+    font-size: clamp(0.8rem, 0.629rem + 0.857vw, 2rem);
+    font-family: Newsreader;
+
+    width: clamp(5rem, 3.929rem + 5.357vw, 12.5rem);
+    margin: 0 0;
+    padding: 0 0;
+}
+
+.navmenutitle-style{
+  font-size: clamp(0.8rem, 0.629rem + 0.857vw, 2rem);
+  font-family: Newsreader;
+  text-decoration: none;
+  color: #7A4FCF;
+}
+
+.vr {
+    border-right: clamp(0.031rem, 0.005rem + 0.12vw, 0.125rem) solid #C4ADE8;
+    height: clamp(1rem, 0.786rem + 1.071vw, 2.5rem);
+    background-color: transparent;
+    background-repeat:no-repeat;
+    opacity: 1;
+  }
+
+
+
+.navmenu{
+    display:flex;
+    flex-direction: row;
+    justify-content:right;
+    align-items: center;
+    list-style-type: none;
+
+    font-size: clamp(0.8rem, 0.629rem + 0.857vw, 2rem);
+    font-family: Newsreader;
+
+    height:clamp(1rem, 0.786rem + 1.071vw, 2.5rem);
+    gap:clamp(0.5rem, 0.393rem + 0.536vw, 1.25rem);
+    margin: 0 0;
+    margin-right:clamp(0.5rem, 0rem + 2.5vw, 4rem);
+    padding: 0 0;
+
+  }
+
+.navelement{
+    text-decoration: none;
+    color: black;
+  }
+
+.title{
+    display:flex;
+    justify-content: center;
+    margin:  4rem 0rem;
+    font-family: Newsreader;
+    font-size:clamp(1.5rem, 1.071rem + 2.143vw, 4.5rem);
+  }
+
+  .btn-custom {
+    background-color: #426B1F; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin bordes */
+}
+
+.btn-custom:hover {
+    background-color: #355417; /* Color más oscuro al pasar el mouse */
+}
+
+.button-flex{
+  display:flex;
+  justify-content:center;
+  margin: 5vw 0px;
+
+}
+
+.button-style{
+  display:block;
+  width:clamp(6rem, 4.714rem + 6.429vw, 15rem);
+  height:clamp(1.5rem, 1.179rem + 1.607vw, 3.75rem);
+  font-size: clamp(0.8rem, 0.629rem + 0.857vw, 2rem);
+  font-family: times;
+  font-weight: clamp(31.25rem, 30.375rem + 4vw, 34.375rem);
+  background-color: #426B1F;
+  color:white;
+  border:none;
+  cursor: pointer;
+  text-align: center;
+  border-radius: clamp(1px, 0.5vw, 8px); /* Bordes redondeados también adaptativos */
+}
+
+.img-container {
+    display: grid;
+    grid-template-rows: 6% repeat(5, 1fr);
+    grid-template-columns:clamp(0.2rem, -2.629rem + 14.143vw, 20rem) clamp(1rem, 0.786rem + 1.071vw, 2.5rem) repeat(10, 1fr) clamp(1rem, 0.786rem + 1.071vw, 2.5rem) clamp(0.2rem, -2.629rem + 14.143vw, 20rem);
+    width: 100%; /* O cualquier tamaño deseado */
+    height: auto; /* O cualquier tamaño deseado */
+  }
+
+
+#img1{
+  grid-area: 1/2/3/4;
+  justify-self: start;
+}
+#img2{
+  grid-area: 2/3/6/7;
+  justify-self: start;
+}
+#img3{
+  grid-area: 2/9/6/13;
+  justify-self: end;
+}
+#img4{
+  grid-area: 1/12/3/14;
+  justify-self: end;
+}
+
+.img-fluid {
+  max-width: clamp(7rem, 4rem + 15vw, 28rem);  /* Las imágenes se ajustan proporcionalmente */
+  height: auto;
+  flex: 1;
+  object-fit: cover;
+  border-radius: clamp(5px, 2vw, 20px); /* Bordes redondeados también adaptativos */
+}
+
+.svg-fluid{
+  max-width: clamp(2rem, 1.571rem + 2.143vw, 5rem);  /* Las imágenes se ajustan proporcionalmente */
+  height: auto;
+  flex: 1;
+  object-fit: cover;
+}
+
+.headers{
+  display:flex;
+  justify-content: center;
+  font-size: clamp(0.8rem, 0.486rem + 1.571vw, 3rem);
+  font-family: times;
+  font-weight: 550;
+  margin: clamp(1rem, 0.72rem + 1.28vw, 2rem) 0;
+  text-decoration: underline;
+}
+.headers:hover {
+  transform: scale(1.1); /* Aumenta de tamaño al pasar el cursor */
+}
+.text-style{
+  font-family: times;
+  font-size:clamp(0.5rem, 0.343rem + 0.786vw, 1.6rem);
+  margin:0 clamp(4rem, -1.88rem + 26.88vw, 25rem);
+  margin-bottom: clamp(4rem, 3.683rem + 1.448vw, 6rem);
+}
+
+.img-text-style{
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  text-align: left;
+  margin: 0 clamp(2rem, -1.64rem + 16.64vw, 15rem);
+  border-bottom: clamp(0.031rem, 0.005rem + 0.12vw, 0.125rem) solid grey;
+  padding: clamp(1rem, 0.72rem + 1.28vw, 2rem) 0;
+  opacity: 1;
+}
+
+
+.bullet-text-container{
+  display:flex;
+  justify-content: flex-end;
+  max-width:clamp(8rem, -1.027rem + 41.267vw, 65rem);
+  padding:0 0;
+  margin:0 0;
+  margin-left: clamp(1rem, 0.44rem + 2.56vw, 3rem);
+  margin-right: clamp(0rem, -0.84rem + 3.84vw, 3rem);
+
+}
+.bullet-text-style{
+  font-family: times;
+  font-size:clamp(0.5rem, 0.343rem + 0.786vw, 1.6rem);
+
+}
+
+
+@media ( max-width: 700px)
+{
+  .family-header{
+    margin: 0 0;
+    margin-top:clamp(1rem, 0.571rem + 2.143vw, 4rem);
+    margin-bottom: clamp(1rem, 0.571rem + 2.143vw, 4rem);
+  }
+
+}
+@media ( min-width: 701px)
+{
+  .family-header{
+    margin: 0 0;
+    margin-top:clamp(1rem, 0.571rem + 2.143vw, 4rem);
+    margin-bottom: calc(-1 * clamp(0.5rem, 0rem + 2.5vw, 4rem));
+  }
+
+}
+
+
+.small-img-fluid{
+  max-width:clamp(3rem, -5.571rem + 22.857vw, 15rem);  /* Las imágenes se ajustan proporcionalmente */
+  height: 100%;
+  position: relative;
+  border-radius: clamp(5px, 2vw, 20px); /* Bordes redondeados también adaptativos */
+  object-fit: cover;
+}
+
+.text-mom-style{
+
+  font-family: times;
+  line-height:clamp(0.75rem, 0.429rem + 1.607vw, 3rem);
+  text-align:center;
+  width:clamp(6rem, -2.791rem + 40.186vw, 60rem);
+  font-size: clamp(0.5rem, 0.343rem + 0.786vw, 1.6rem);
+  margin-right: clamp(3rem, 1.047rem + 8.93vw, 15rem);
+}
+
+.img-container-mom {
+  display: grid;
+  margin-left:clamp(2rem, 0rem + 10vw, 16rem);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns:clamp(8rem, 0.538rem + 37.309vw, 60rem) clamp(0rem, -1.004rem + 5.022vw, 7rem) clamp(1.563rem, 0.065rem + 7.488vw, 12rem) clamp(3.125rem, 0.219rem + 14.529vw, 23.375rem) clamp(3.125rem, 0.219rem + 14.529vw, 23.375rem);
+
+}
+
+.mom-img-fluid{
+  border-radius: clamp(5px, 2vw, 20px);
+  object-fit: contain;
+}
+.mom-svg-fluid{
+  height: 100%;
+  object-fit: contain;
+}
+
+#txt1{
+  grid-area: 1/1/4/2;
+  justify-self: start;
+  align-self:center;
+}
+#img5{
+  grid-area: 1/3/4/6;
+  height:auto;
+  width:clamp(9.375rem, 0.658rem + 43.587vw, 70.125rem);
+  justify-self: start;
+}
+
+#img6{
+  grid-area: 2/4/4/5;
+  height:auto;
+  width:clamp(4.063rem, 0.285rem + 18.89vw, 30.391rem);
+  justify-self: start;
+}
+
+
+.text-dad-style{
+  font-family: times;
+  font-size:clamp(0.5rem, 0.343rem + 0.786vw, 1.6rem);
+  line-height:clamp(0.75rem, 0.429rem + 1.607vw, 3rem);
+  text-align:center;
+}
+
+.img-container-dad {
+  display: grid;
+  margin-top: clamp(2rem, 0rem + 10vw, 16rem);
+  margin-right: none;
+  margin-left: clamp(2rem, 0rem + 10vw, 16rem);
+  grid-template-rows: 1fr;
+  grid-template-columns:  clamp(5.388rem, 0rem + 26.94vw, 43.104rem) clamp(1.151rem, 0rem + 5.755vw, 9.208rem) clamp(1.299rem, 0rem + 6.495vw, 10.392rem)  clamp(2.362rem, 0rem + 11.81vw, 18.896rem) clamp(3.543rem, 0rem + 17.715vw, 28.344rem) clamp(2.362rem, 0rem + 11.81vw, 18.896rem) clamp(1.613rem, 0rem + 8.065vw, 12.904rem);
+  width:clamp(18rem, 13rem + 13.333vw, 25rem);
+  height: auto;
+}
+
+
+.dad-img-fluid{
+  height: auto;
+  border-radius: clamp(5px, 2vw, 20px);
+  object-fit: cover;
+}
+.dad-svg-fluid{
+  object-fit: fill;
+}
+
+#txt2{
+  grid-area: 1/1/2/2;
+  width: clamp(5.388rem, 0rem + 26.94vw, 43.104rem);
+  justify-self: start;
+  align-self:center;
+}
+
+#img7{
+  grid-area: 1/3/2/8;
+  width:clamp(11rem, 0rem + 55vw, 88rem);
+  justify-self: start;
+  align-self:center;
+}
+#img8{
+  grid-area: 1/4/2/5;
+  width:clamp(2.362rem, 0rem + 11.81vw, 18.896rem);
+  align-self:center;
+}
+
+#img9{
+  grid-area: 1/6/2/7;
+  width:clamp(2.362rem, 0rem + 11.81vw, 18.896rem);
+  align-self:center;
+}
+
+
+.text-sis-style{
+  font-family: times;
+  font-size: clamp(0.5rem, 0.343rem + 0.786vw, 1.6rem);
+  line-height:clamp(0.75rem, 0.429rem + 1.607vw, 3rem);
+  text-align:center;
+}
+
+.img-container-sis {
+  display: grid;
+  margin-top: clamp(2rem, 0rem + 10vw, 16rem);
+  margin-left:clamp(2rem, 0rem + 10vw, 16rem);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns:clamp(6.319rem, 0rem + 31.595vw, 50.552rem) clamp(1.344rem, 0rem + 6.72vw, 10.752rem) clamp(2.542rem, 0rem + 12.71vw, 20.336rem) clamp(2.778rem, 0rem + 13.89vw, 22.224rem) clamp(2.542rem, 0rem + 12.71vw, 20.336rem);
+
+}
+
+.sis-img-fluid{
+  border-radius: clamp(5px, 2vw, 20px);
+  object-fit: fill;
+}
+.sis-svg-fluid{
+  object-fit: contain;
+}
+
+#txt3{
+  grid-area: 1/1/4/2;
+  justify-self: start;
+  align-self:center;
+}
+#img10{
+  grid-area: 1/3/4/6;
+  width:clamp(7.861rem, 0rem + 39.305vw, 62.888rem);
+  justify-self: start;
+  align-self:center;
+}
+
+#img11{
+  grid-area: 2/4/3/5;
+  width:clamp(2.778rem, 0rem + 13.89vw, 22.224rem);
+  justify-self: start;
+}
+
+
+
+.text-bro-style{
+  font-family: times;
+  font-size: clamp(0.5rem, 0.343rem + 0.786vw, 1.6rem);
+}
+
+.img-container-bro {
+  display: grid;
+  margin-top: clamp(2rem, 0rem + 10vw, 16rem);
+  margin-left:clamp(2.972rem, 0rem + 14.861vw, 23.778rem);
+  grid-template-rows: clamp(1.236rem, 0rem + 6.181vw, 9.889rem) clamp(0.5rem, 0rem + 2.5vw, 4rem) 1fr;
+  grid-template-columns:clamp(2.604rem, 0rem + 13.021vw, 20.833rem) clamp(3.104rem, 0rem + 15.521vw, 24.833rem) clamp(2.604rem, 0rem + 13.021vw, 20.833rem) clamp(3.104rem, 0rem + 15.521vw, 24.833rem) clamp(2.604rem, 0rem + 13.021vw, 20.833rem);
+
+}
+
+.bro-img-fluid{
+  border-radius: clamp(5px, 2vw, 20px);
+  object-fit: fill;
+}
+.brp-svg-fluid{
+  object-fit: contain;
+}
+
+
+#img12{
+  grid-area: 2/1/4/2;
+  width:clamp(2.604rem, 0rem + 13.021vw, 20.833rem);
+  justify-self: start;
+
+}
+
+#img13{
+  grid-area: 1/3/4/4;
+  width:clamp(2.604rem, 0rem + 13.021vw, 20.833rem);
+  justify-self: start;
+}
+
+
+#img14{
+  grid-area: 2/5/4/6;
+  width:clamp(2.604rem, 0rem + 13.021vw, 20.833rem);
+  justify-self: start;
+}
+
+#img15{
+  grid-area: 3/2/4/5;
+  width:clamp(7.931rem, 0rem + 39.653vw, 63.444rem);
+  justify-self: center;
+}
+
+#img16{
+  border-radius: clamp(5px, 2vw, 20px);
+  width:clamp(5.556rem, 0rem + 27.778vw, 44.444rem);
+}
+
+.img-centered{
+  display:flex;
+  justify-content:center;
+}
+
+.text-style-end {
+  text-align:left;
+  font-family: times;
+  font-size:clamp(0.5rem, 0.343rem + 0.786vw, 1.6rem);
+  margin: clamp(0.833rem, 0rem + 4.167vw, 6.667rem) clamp(0.2rem, -2.771rem + 14.857vw, 21rem);
+}
+
+.text-love{
+  text-align:right;
+  font-family: times;
+  font-size:clamp(0.5rem, 0.343rem + 0.786vw, 1.6rem);
+  margin-top:clamp(1.528rem, 0rem + 7.639vw, 12.222rem);
+  margin-bottom:clamp(0.833rem, 0rem + 4.167vw, 6.667rem);
+  margin-right:clamp(0.2rem, -2.771rem + 14.857vw, 21rem);
+}
+
+.last-corners-container{
+  display:flex;
+  margin: 0 clamp(0.2rem, -2.629rem + 14.143vw, 20rem) ;
+  margin-bottom:clamp(0.833rem, 0rem + 4.167vw, 6.667rem);
+  justify-content:space-between;
+}
+
+.last-corners{
+  width:clamp(2rem, 1.571rem + 2.143vw, 5rem);
+}
+
+
+.left-title{
+  display:flex;
+  justify-content: flex-start;
+  margin:  4rem clamp(5rem, 3.929rem + 5.357vw, 12.5rem);
+  font-family: Newsreader;
+  font-size:clamp(1.5rem, 1.071rem + 2.143vw, 4.5rem);
+  border-bottom: clamp(0.031rem, 0.005rem + 0.12vw, 0.125rem) solid grey;
+}
+
+.roman-list{
+  list-style-type: upper-roman;
+  list-style-position:inside;
+  font-family: Newsreader;
+  font-size:clamp(0.5rem, 0.343rem + 0.786vw, 1.6rem);
+  margin:  4rem clamp(5rem, 3.929rem + 5.357vw, 12.5rem);
+}
+.unadorned-list{
+  list-style-type: none;
+  list-style-position:inside;
+  font-family: Newsreader;
+  font-size:clamp(0.5rem, 0.343rem + 0.786vw, 1.6rem);
+  margin:  4rem clamp(5rem, 3.929rem + 5.357vw, 12.5rem);
+}
+.text-style{
+  font-family: times;
+  font-size:clamp(0.5rem, 0.343rem + 0.786vw, 1.6rem);
+  margin:4rem clamp(5rem, 3.929rem + 5.357vw, 12.5rem);
+  text-align: left;
+}
+
+.cof-img-container{
+  display:flex;
+  margin: 0 clamp(2rem, 0.5rem + 7.5vw, 12.5rem);
+  justify-content: flex-start;
+  gap:clamp(2rem, 0.5rem + 7.5vw, 12.5rem);
+
+}
+
+.cof-img{
+  max-width: clamp(7rem, 4rem + 15vw, 28rem);   /* Las imágenes se ajustan proporcionalmente */
+  height: auto;
+  border-radius: clamp(5px, 2vw, 20px); /* Bordes redondeados también adaptativos */
+  object-fit: cover;
+}
+
+
+.headers-coffee{
+  display:flex;
+  justify-content: flex-start;
+  font-size: clamp(0.8rem, 0.486rem + 1.571vw, 3rem);
+  font-family: times;
+  font-weight: 500;
+  margin: clamp(1rem, 0.72rem + 1.28vw, 2rem) clamp(5rem, 3.929rem + 5.357vw, 12.5rem);
+ color:#7a3d35;
+}
